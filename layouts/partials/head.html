@@ -1,0 +1,84 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {{ .Hugo.Generator }}
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{ if .IsHome }}
+    {{ with .Site.Params.homeMetaContent }}
+      <meta name="description" content="{{ . | plainify }}">
+    {{ end }}
+  {{ end }}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="{{ "css/prism.css" | absURL }}" media="none" onload="this.media='all';">
+
+  {{ $templateStyles := resources.Get "css/template-styles.css" }}
+  {{ $styles := $templateStyles | resources.ExecuteAsTemplate "css/styles.css" . }}
+  <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}">
+  <STYLE TYPE="text/css">
+  <!--
+
+  canvas#canvas { width: 200px; height: 200px; }
+
+  .pico8_el {
+  	float:left;
+  	width:92px;
+  	display:inline-block;
+    	margin: 1px;
+  	padding: 4px;
+  	text-align: center;
+  	color:#fff;
+  	background-color:#777;
+  	font-family : verdana;
+  	font-size: 9pt;
+  	cursor: pointer;
+  	cursor: hand;
+  }
+  .pico8_el a{
+  	text-decoration: none;
+  	color:#fff;
+  }
+
+  .pico8_el:hover{
+  	background-color:#aaa;
+  }
+
+  .pico8_el:link{
+  	background-color:#aaa;
+  }
+
+  canvas{
+      image-rendering: optimizeSpeed;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: optimize-contrast;
+      image-rendering: pixelated;
+      -ms-interpolation-mode: nearest-neighbor;
+      border: 0px
+  }
+
+  -->
+  </STYLE>
+
+  <style id="inverter" media="none">
+    html { filter: invert(100%) }
+    * { background-color: inherit }
+    img:not([src*=".svg"]), .colors, iframe, .demo-container { filter: invert(100%) }
+  </style>
+
+  {{ $title := print .Title " | " .Site.Title }}
+  {{ if .IsHome }}
+    {{ $title = .Site.Title }}
+  {{ end }}
+  <title>{{ $title }}</title>
+</head>

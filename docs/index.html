@@ -10,8 +10,6 @@
 
   
     
-      <meta name="description" content="An accessibility-friendly Hugo theme, ported from the original Cupper project.">
-    
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -27,6 +25,50 @@
   
   
   <link rel="stylesheet" type="text/css" href="https://metakits.cc/PicoArt/css/styles.css">
+  <STYLE TYPE="text/css">
+  <!--
+
+  canvas#canvas { width: 200px; height: 200px; }
+
+  .pico8_el {
+  	float:left;
+  	width:92px;
+  	display:inline-block;
+    	margin: 1px;
+  	padding: 4px;
+  	text-align: center;
+  	color:#fff;
+  	background-color:#777;
+  	font-family : verdana;
+  	font-size: 9pt;
+  	cursor: pointer;
+  	cursor: hand;
+  }
+  .pico8_el a{
+  	text-decoration: none;
+  	color:#fff;
+  }
+
+  .pico8_el:hover{
+  	background-color:#aaa;
+  }
+
+  .pico8_el:link{
+  	background-color:#aaa;
+  }
+
+  canvas{
+      image-rendering: optimizeSpeed;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: optimize-contrast;
+      image-rendering: pixelated;
+      -ms-interpolation-mode: nearest-neighbor;
+      border: 0px
+  }
+
+  -->
+  </STYLE>
 
   <style id="inverter" media="none">
     html { filter: invert(100%) }
@@ -141,7 +183,7 @@
       </a>
       <p class="library-desc">
         
-          An accessibility-friendly Hugo theme, ported from the <a href="https://github.com/ThePacielloGroup/cupper">original Cupper</a> project.
+          Digital arts in the very small form.
         
       </p>
     </div>
@@ -165,20 +207,7 @@
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
-        <span class="text">Home</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/PicoArt/post/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">Blog</span>
+        <span class="text">About</span>
       </a>
     </li>
   
@@ -200,19 +229,6 @@
       
       
       
-      <a href="/PicoArt/about/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">About</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
       <a href="/PicoArt/index.xml" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
@@ -221,8 +237,38 @@
       </a>
     </li>
   
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/PicoArt/post/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Artworks</span>
+      </a>
+    </li>
+  
   </ul>
+<br/>
+  <ul id="patterns-list">
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/PicoArt/10print/" >
+        
+        <span class="text">10PRINT</span>
+      </a>
+    </li>
+  
+  </ul>
+
 </nav>
+
   </div>
 </header>
       <div class="main-and-footer">
@@ -230,7 +276,8 @@
           
   <main id="main">
     <h1>Pico Art</h1>
-    
+    <p>test test</p>
+
   </main>
 
           <footer role="contentinfo">
@@ -241,7 +288,7 @@
     </label>
   </div>
   
-    Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/zwbetz-gh/cupper-hugo-theme">Cupper</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>.
+    Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/zwbetz-gh/cupper-hugo-theme">Cupper</a>.
   
 </footer>
 

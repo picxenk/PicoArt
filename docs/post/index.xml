@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pico Art</title>
-    <link>https://metakits.cc/PicoArt/</link>
-    <description>Recent content on Pico Art</description>
+    <title>Posts on Pico Art</title>
+    <link>https://metakits.cc/PicoArt/post/</link>
+    <description>Recent content in Posts on Pico Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 23 Mar 2019 10:03:56 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 23 Mar 2019 10:56:44 +0900</lastBuildDate>
     
-	<atom:link href="https://metakits.cc/PicoArt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metakits.cc/PicoArt/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

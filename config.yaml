@@ -4,6 +4,7 @@ defaultContentLanguage: ko
 title: Pico Art
 theme: cupper-hugo-theme
 publishDir: docs
+
 # googleAnalytics: UA-123456789-1
 # disqusShortname: yourdiscussshortname
 
@@ -17,27 +18,28 @@ imaging:
   quality: 99
 
 params:
-  description: An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project.
-  homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
-  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
+  description: Digital arts in the very small form.
+  homeMetaContent:
+  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: Jan 2, 2006
   codePenUser: someUser
 
 menu:
   nav:
-    - name: Home
+    - name: About
       url: /
       weight: 1
-    - name: Blog
-      url: /post/
-      weight: 2
     - name: Tags
       url: /tags/
-      weight: 3
-    - name: About
-      url: /about/
-      weight: 4
+      weight: 2
     - name: RSS
       url: /index.xml
-      weight: 5
+      weight: 3
+    - name: Artworks
+      url: /post/
+      weight: 4
+  picoarts:
+    - name: 10PRINT
+      url: /10print/
+      weight: 1

@@ -3,7 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://metakits.cc/PicoArt/10print/</loc>
+    <lastmod>2019-03-23T10:56:44+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://metakits.cc/PicoArt/</loc>
+    <lastmod>2019-03-23T10:03:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://metakits.cc/PicoArt/post/</loc>
+    <lastmod>2019-03-23T10:56:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
